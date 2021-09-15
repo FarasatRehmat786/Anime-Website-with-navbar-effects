@@ -1,0 +1,159 @@
+/*styling of navbar*/
+.navbar {
+  border-bottom: 0.1rem solid orange;
+  box-shadow: 0rem 0rem 1rem orange;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+
+  transition: all 0.2s ease-in-out;
+}
+nav.active {
+  background-color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+}
+/*navbar input styling*/
+.navbar input {
+  background-color: transparent;
+  border: 2px solid orange;
+}
+nav.active input {
+  border-color: rgb(209, 147, 32) !important;
+}
+.navbar input:focus {
+  border: 2px solid orange;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.navbar input::placeholder {
+  color: orange;
+}
+.navbar.active input::placeholder {
+  color: rgb(209, 147, 32) !important;
+}
+
+/*navbar list styling*/
+.navbar li a {
+  border-bottom: 2px solid transparent;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+nav.active li a {
+  color: rgb(209, 147, 32) !important;
+
+  transition: all 0.2s ease-in;
+}
+.navbar li a:hover {
+  border-bottom: 2px solid orange;
+}
+.drpdwn li a {
+  text-shadow: 0px 0px 1px black;
+}
+.drpdwn li a:hover {
+  background-color: black;
+  text-shadow: 0px 0px 1px black;
+}
+/*styling of logo*/
+.logoimg {
+  border-radius: 10%;
+}
+/*1st section styling*/
+#okagy {
+  height: 28.5rem;
+  background-image: url(../img/bg5.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar.active button {
+  border-color: rgb(209, 147, 32) !important;
+  color: rgb(209, 147, 32) !important;
+}
+.alpha {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*text styling of 1st section*/
+.txt h1 {
+  padding-top: 15%;
+  letter-spacing: 0.7rem;
+  animation: sasuke 4s infinite;
+}
+.txt h4 {
+  letter-spacing: 0.5rem;
+  animation: naruto 4s infinite;
+}
+/*key frame animations*/
+@keyframes naruto {
+  0% {
+    color: orange;
+    text-shadow: 0rem 0rem 1rem orange;
+  }
+  25% {
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+  }
+  50% {
+    color: orange;
+    text-shadow: 0rem 0rem 1rem orange;
+  }
+  75% {
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+  }
+  100% {
+    color: orange;
+    text-shadow: 0rem 0rem 1rem orange;
+  }
+}
+@keyframes sasuke {
+  0% {
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+  }
+  25% {
+    color: orange;
+    text-shadow: 0rem 0rem 1rem orange;
+  }
+  50% {
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+  }
+  75% {
+    color: orange;
+    text-shadow: 0rem 0rem 1rem orange;
+  }
+  100% {
+    color: white;
+    text-shadow: 0rem 0rem 1rem white;
+  }
+}
+/*about section styling*/
+#leafvillage h1 {
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+/*team section styling*/
+#teamkakashi {
+  background-image: url(../img/bg6.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*team hr styling*/
+#teamkakashi hr {
+  width: 3rem;
+  border-width: 2px !important;
+}
+/*team imgs and img boxes styling*/
+#teamkakashi img,
+.card {
+  box-shadow: 0rem 0rem 1rem orange;
+}
+/*team text styling*/
+#teamkakashi h1 {
+  text-shadow: 0rem 0rem 1rem orange;
+}
